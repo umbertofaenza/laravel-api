@@ -18,3 +18,4 @@ use Illuminate\Support\Facades\Route;
 Route::get("/projects", [ProjectController::class, "index"]);
 Route::get("/projects/{project}", [ProjectController::class, "show"]);
 
+Route::get("/projects-by-type/{type_id}", [ProjectController::class, "projectsByType"]);
